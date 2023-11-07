@@ -41,4 +41,5 @@ def get_data():
 
 
 if st.sidebar.button("Generate"):
-    get_data()
+    if pdf_file is not None and openai_api is not None:
+        get_data()
